@@ -17,8 +17,8 @@ if (isset($update->message)) {
 
     $main_menu = buildKeyboard([
         [['text' => "🕒 Namoz Vaqtlari"], ['text' => "📅 Ramazon Taqvimi"]],
-        [['text' => "🤲 Duolar"], ['text' => "📍 Mintaqa Tanlash"]],
-        [['text' => "⚙️ Sozlamalar"]]
+        [['text' => "🤲 Duolar"], ['text' => "✨ Asmaul Husna"]],
+        [['text' => "📍 Mintaqa Tanlash"], ['text' => "⚙️ Sozlamalar"]]
     ]);
 
     if ($text == "/start") {
@@ -125,6 +125,19 @@ if (isset($update->message)) {
                 'reply_markup' => $main_menu
             ]);
         }
+    }
+
+    elseif ($text == "✨ Asmaul Husna") {
+        $msg = "✨ *Allohning go'zal ismlari (Asmaul Husna)*\n\n";
+        foreach ($names_of_allah as $item) {
+            $msg .= "🔹 *{$item[0]}* — {$item[1]}\n";
+        }
+        bot('sendMessage', [
+            'chat_id' => $chat_id,
+            'text' => $msg,
+            'parse_mode' => 'markdown',
+            'reply_markup' => $main_menu
+        ]);
     }
 
     elseif ($text == "⬅️ Orqaga") {

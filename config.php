@@ -22,6 +22,20 @@ $duolar = [
     ]
 ];
 
+// Asmaul Husna (Namuna tariqasida bir nechtasi)
+$names_of_allah = [
+    ["Ar-Rahmon", "O'ta mehribon"],
+    ["Ar-Rahim", "Juda rahmli"],
+    ["Al-Malik", "Barcha narsaning egasi"],
+    ["Al-Quddus", "Nuqsonlardan xoli"],
+    ["As-Salam", "Omonlik beruvchi"],
+    ["Al-Mo'min", "Iymon va omonlik beruvchi"],
+    ["Al-Muhaymin", "Hamma narsani kuzatib turuvchi"],
+    ["Al-Aziz", "G'olib, qudratli"],
+    ["Al-Jabbor", "Irodasi cheksiz"],
+    ["Al-Mutakabbir", "Kattalik yarashuvchi"],
+];
+
 // Viloyatlar ro'yxati
 $regions = [
     "Toshkent", "Andijon", "Buxoro", "Guliston", "Jizzax", "Zarafshon", 
