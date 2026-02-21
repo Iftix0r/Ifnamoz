@@ -1,0 +1,4 @@
+users/*.json
+.vscode/
+.DS_Store
+*.log
